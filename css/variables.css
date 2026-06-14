@@ -15,7 +15,7 @@
   --color-text-muted:     #5a5a5a;
 
   /* Accent — pulled from logo gradient */
-  --color-accent:       #b07840;
+  --color-accent:       #d8d8d8;
   --color-accent-dim:   #8a5c2e;
   --color-accent-glow:  rgba(176, 120, 64, 0.15);
   --color-accent-blue:  #4272c4;
@@ -27,7 +27,7 @@
   --color-success: #2e7d52;
 
   /* Typography */
-  --font-display:  'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-display:  'Arimo', 'Helvetica Neue', Arial, sans-serif;
   --font-mono:     'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
 
   --size-xs:   0.75rem;   /* 12px */
