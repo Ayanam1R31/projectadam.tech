@@ -14,10 +14,13 @@
   --color-text-secondary: #9a9a9a;
   --color-text-muted:     #5a5a5a;
 
-  /* Accent */
-  --color-accent:       #d4a843;
-  --color-accent-dim:   #a07a28;
-  --color-accent-glow:  rgba(212, 168, 67, 0.15);
+  /* Accent — pulled from logo gradient */
+  --color-accent:       #b07840;
+  --color-accent-dim:   #8a5c2e;
+  --color-accent-glow:  rgba(176, 120, 64, 0.15);
+  --color-accent-blue:  #4272c4;
+  --color-accent-purple:#6b4a9e;
+  --gradient-accent: linear-gradient(135deg, #4272c4 0%, #6b4a9e 50%, #b07840 100%);
 
   /* Functional */
   --color-danger:  #cc3333;
