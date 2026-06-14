@@ -51,96 +51,15 @@
 
     <section class="section" style="padding-top: calc(var(--nav-height) + var(--space-16));">
       <div class="container">
-        <div class="contact-layout">
-
-          <!-- Left: Info -->
-          <div class="contact-info">
-            <p class="eyebrow" data-reveal>Get In Touch</p>
-            <h1 class="headline-lg" data-reveal data-reveal-delay="1">Contact Us</h1>
-            <p class="body-lg" data-reveal data-reveal-delay="2">
-              [PLACEHOLDER: Who should contact you and what to expect after submitting.]
-            </p>
-
-            <div class="contact-channels" data-reveal data-reveal-delay="3">
-              <div class="contact-channel">
-                <p class="contact-channel__label eyebrow">General</p>
-                <a href="mailto:owen.maute@gmail.com" class="contact-channel__value">
-                  owen.maute@gmail.com
-                </a>
-              </div>
-              <div class="contact-channel">
-                <p class="contact-channel__label eyebrow">Partnerships</p>
-                <a href="mailto:owen.maute@gmail.com" class="contact-channel__value">
-                  owen.maute@gmail.com
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right: Form -->
-          <div class="contact-form-wrap" data-reveal data-reveal-delay="2">
-            <form class="contact-form" name="contact" method="POST" novalidate>
-              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-
-              <div class="form-row form-row--2">
-                <div class="form-field">
-                  <label class="form-label" for="firstName">First Name *</label>
-                  <input class="form-input" type="text" id="firstName" name="firstName" required autocomplete="given-name" />
-                </div>
-                <div class="form-field">
-                  <label class="form-label" for="lastName">Last Name *</label>
-                  <input class="form-input" type="text" id="lastName" name="lastName" required autocomplete="family-name" />
-                </div>
-              </div>
-
-              <div class="form-field">
-                <label class="form-label" for="email">Work Email *</label>
-                <input class="form-input" type="email" id="email" name="email" required autocomplete="email" />
-              </div>
-
-              <div class="form-field">
-                <label class="form-label" for="org">Organization</label>
-                <input class="form-input" type="text" id="org" name="org" autocomplete="organization" />
-              </div>
-
-              <div class="form-field">
-                <label class="form-label" for="inquiry">Inquiry Type *</label>
-                <select class="form-input form-select" id="inquiry" name="inquiry" required>
-                  <option value="" disabled selected>Select one</option>
-                  <option value="uav">ADAM UAV</option>
-                  <option value="powerplant">ADAM Powerplant</option>
-                  <option value="partnership">Partnership</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <div class="form-field">
-                <label class="form-label" for="message">Message *</label>
-                <textarea
-                  class="form-input form-textarea"
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                  placeholder="Tell us about your inquiry..."
-                ></textarea>
-              </div>
-
-              <div class="form-field">
-                <label class="form-checkbox">
-                  <input type="checkbox" name="consent" required />
-                  <span class="form-checkbox__label">
-                    I agree to the <a href="#">Privacy Policy</a> and consent to being contacted.
-                  </span>
-                </label>
-              </div>
-
-              <button type="submit" class="btn btn--accent btn--lg form-submit">
-                Send Message →
-              </button>
-            </form>
-          </div>
-
+        <div style="padding: var(--space-16) 0;">
+          <p class="eyebrow" data-reveal>Get In Touch</p>
+          <h1 class="headline-lg" data-reveal data-reveal-delay="1">Contact Us</h1>
+          <p class="body-lg" style="margin-top: var(--space-6); max-width: 52ch;" data-reveal data-reveal-delay="2">
+            Reach out directly for inquiries about the ADAM UAV, Powerplant, partnerships, or anything else.
+          </p>
+          <a href="mailto:owen.maute@gmail.com" class="btn btn--hero btn--lg" style="margin-top: var(--space-8); display: inline-flex;" data-reveal data-reveal-delay="3">
+            owen.maute@gmail.com
+          </a>
         </div>
       </div>
     </section>
