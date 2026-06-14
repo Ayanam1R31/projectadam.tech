@@ -220,6 +220,13 @@
   width: 100%;
 }
 
+/* Nav container overrides: full-bleed so logo is at left edge and buttons at right edge */
+.nav .container {
+  max-width: none;
+  padding-left: var(--space-6);
+  padding-right: var(--space-6);
+}
+
 .nav__logo {
   display: flex;
   align-items: center;

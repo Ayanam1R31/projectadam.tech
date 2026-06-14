@@ -55,10 +55,7 @@
   font-weight: var(--weight-black);
   letter-spacing: var(--tracking-tight);
   line-height: 0.9;
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #fff;
 }
 
 .product-hero__tagline {
