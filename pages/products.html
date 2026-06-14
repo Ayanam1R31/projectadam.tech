@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="[PLACEHOLDER: Systems page description]" />
+  <title>Systems — [Company Name]</title>
+
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+  <!-- NAV (same as index, paths adjusted) -->
+  <nav class="nav scrolled" id="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="[Company Name] home">
+        <div class="nav__logo-mark" aria-hidden="true"></div>
+        <span class="nav__logo-text">[Company Name]</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="products.html"     class="nav__link active">Systems</a></li>
+        <li><a href="../index.html#capabilities" class="nav__link">Capabilities</a></li>
+        <li><a href="../index.html#technology"   class="nav__link">Technology</a></li>
+        <li><a href="about.html"        class="nav__link">Mission</a></li>
+        <li><a href="../index.html#news" class="nav__link">News</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="contact.html" class="btn btn--ghost btn--sm">Partner With Us</a>
+        <a href="contact.html" class="btn btn--primary btn--sm">Contact <span class="btn__arrow">→</span></a>
+      </div>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="products.html"              class="nav__mobile-link">Systems</a>
+      <a href="../index.html#capabilities" class="nav__mobile-link">Capabilities</a>
+      <a href="../index.html#technology"   class="nav__mobile-link">Technology</a>
+      <a href="about.html"                 class="nav__mobile-link">Mission</a>
+      <a href="../index.html#news"         class="nav__mobile-link">News</a>
+      <a href="contact.html"               class="nav__mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <header class="page-hero" aria-label="Systems page header">
+      <div class="container page-hero__inner">
+        <p class="eyebrow" data-reveal>[Systems / Platforms]</p>
+        <h1 class="headline-xl" data-reveal data-reveal-delay="1">
+          [Systems<br/>Page Headline]
+        </h1>
+        <p class="body-lg" style="max-width: 55ch;" data-reveal data-reveal-delay="2">
+          [PLACEHOLDER: Overview of the systems product line. What unifying doctrine or
+          technology connects all systems?]
+        </p>
+      </div>
+    </header>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <div class="container filter-bar__inner">
+        <button class="filter-btn filter-btn--active" data-filter="all">All Systems</button>
+        <button class="filter-btn" data-filter="[category-1]">[Category 1]</button>
+        <button class="filter-btn" data-filter="[category-2]">[Category 2]</button>
+        <button class="filter-btn" data-filter="[category-3]">[Category 3]</button>
+        <button class="filter-btn" data-filter="[category-4]">[Category 4]</button>
+      </div>
+    </div>
+
+    <!-- SYSTEMS FULL GRID -->
+    <section class="section" aria-label="All systems">
+      <div class="container">
+        <div class="product-grid">
+
+          <!-- Product detail card -->
+          <article class="product-card" data-category="[category-1]" data-reveal>
+            <div class="product-card__media">
+              <img
+                class="product-card__img"
+                src="../assets/images/products/product-1.jpg"
+                alt="[System Name]"
+                loading="lazy"
+              />
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__header">
+                <p class="product-card__designation mono">[SYSTEM-001]</p>
+                <span class="product-card__status">[Status]</span>
+              </div>
+              <h2 class="product-card__name">[System Name]</h2>
+              <p class="product-card__type eyebrow">[System Type]</p>
+              <p class="product-card__desc">
+                [PLACEHOLDER: One or two sentence description of what this system does and
+                its primary use case.]
+              </p>
+              <div class="product-card__specs">
+                <div class="product-spec">
+                  <span class="product-spec__label">[Spec]</span>
+                  <span class="product-spec__value">[Value]</span>
+                </div>
+                <div class="product-spec">
+                  <span class="product-spec__label">[Spec]</span>
+                  <span class="product-spec__value">[Value]</span>
+                </div>
+                <div class="product-spec">
+                  <span class="product-spec__label">[Spec]</span>
+                  <span class="product-spec__value">[Value]</span>
+                </div>
+              </div>
+              <a href="../pages/system-detail.html" class="btn btn--outline-accent btn--sm">
+                Full Specifications →
+              </a>
+            </div>
+          </article>
+
+          <!-- Repeat card structure for each system -->
+          <article class="product-card" data-category="[category-2]" data-reveal data-reveal-delay="1">
+            <div class="product-card__media">
+              <img class="product-card__img" src="../assets/images/products/product-2.jpg" alt="[System Name]" loading="lazy" />
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__header">
+                <p class="product-card__designation mono">[SYSTEM-002]</p>
+                <span class="product-card__status">[Status]</span>
+              </div>
+              <h2 class="product-card__name">[System Name]</h2>
+              <p class="product-card__type eyebrow">[System Type]</p>
+              <p class="product-card__desc">[PLACEHOLDER: Description.]</p>
+              <div class="product-card__specs">
+                <div class="product-spec">
+                  <span class="product-spec__label">[Spec]</span>
+                  <span class="product-spec__value">[Value]</span>
+                </div>
+                <div class="product-spec">
+                  <span class="product-spec__label">[Spec]</span>
+                  <span class="product-spec__value">[Value]</span>
+                </div>
+              </div>
+              <a href="../pages/system-detail.html" class="btn btn--outline-accent btn--sm">Full Specifications →</a>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="[category-1]" data-reveal data-reveal-delay="2">
+            <div class="product-card__media">
+              <img class="product-card__img" src="../assets/images/products/product-3.jpg" alt="[System Name]" loading="lazy" />
+            </div>
+            <div class="product-card__content">
+              <div class="product-card__header">
+                <p class="product-card__designation mono">[SYSTEM-003]</p>
+                <span class="product-card__status">[Status]</span>
+              </div>
+              <h2 class="product-card__name">[System Name]</h2>
+              <p class="product-card__type eyebrow">[System Type]</p>
+              <p class="product-card__desc">[PLACEHOLDER: Description.]</p>
+              <div class="product-card__specs">
+                <div class="product-spec">
+                  <span class="product-spec__label">[Spec]</span>
+                  <span class="product-spec__value">[Value]</span>
+                </div>
+                <div class="product-spec">
+                  <span class="product-spec__label">[Spec]</span>
+                  <span class="product-spec__value">[Value]</span>
+                </div>
+              </div>
+              <a href="../pages/system-detail.html" class="btn btn--outline-accent btn--sm">Full Specifications →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner section">
+      <div class="container">
+        <p class="eyebrow cta-banner__eyebrow">[Partnership]</p>
+        <h2 class="cta-banner__headline">[CTA Headline]</h2>
+        <p class="cta-banner__sub">[PLACEHOLDER: Invite the reader to take the next step.]</p>
+        <div class="cta-banner__actions">
+          <a href="contact.html" class="btn btn--primary btn--lg">Contact Us →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <nav class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </nav>
+        <p class="footer__copyright">© <span id="year"></span> [Company Name], Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/filter.js" defer></script>
+</body>
+</html>

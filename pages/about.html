@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="[PLACEHOLDER: About page description]" />
+  <title>Mission — [Company Name]</title>
+
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <div class="nav__logo-mark"></div>
+        <span class="nav__logo-text">[Company Name]</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="products.html"  class="nav__link">Systems</a></li>
+        <li><a href="about.html"     class="nav__link active">Mission</a></li>
+        <li><a href="contact.html"   class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm">Contact →</a>
+      </div>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="products.html" class="nav__mobile-link">Systems</a>
+      <a href="about.html"    class="nav__mobile-link">Mission</a>
+      <a href="contact.html"  class="nav__mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <header class="page-hero page-hero--tall" aria-label="About page header">
+      <div class="container page-hero__inner">
+        <p class="eyebrow" data-reveal>[Mission / About]</p>
+        <h1 class="headline-xl" data-reveal data-reveal-delay="1">
+          [Mission<br/>Page Headline]
+        </h1>
+      </div>
+    </header>
+
+    <!-- MISSION TEXT BLOCK -->
+    <section class="section" aria-labelledby="mission-body-heading">
+      <div class="container container--narrow">
+        <p class="eyebrow" data-reveal>Why We Exist</p>
+        <h2 class="headline-md" id="mission-body-heading" data-reveal data-reveal-delay="1">
+          [Mission Statement Headline]
+        </h2>
+        <hr class="rule rule--accent" style="margin: 2rem 0;" />
+        <p class="body-lg" data-reveal data-reveal-delay="2">
+          [PLACEHOLDER: Full mission statement paragraph. This should clearly articulate the
+          company's purpose, the problem space it operates in, and what success looks like
+          for the organization and its customers.]
+        </p>
+        <p class="body-lg" style="margin-top: 1.5rem;" data-reveal data-reveal-delay="3">
+          [PLACEHOLDER: Second paragraph expanding on the mission. Can discuss the broader
+          national security context or the competitive landscape.]
+        </p>
+      </div>
+    </section>
+
+    <!-- VALUES GRID -->
+    <section class="platform section" aria-labelledby="values-heading">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Values</p>
+        <h2 class="headline-md" id="values-heading" data-reveal data-reveal-delay="1">
+          [Values Headline]
+        </h2>
+        <div class="platform__grid" style="margin-top: 3rem;">
+          <div class="platform-tile" data-reveal data-reveal-delay="1">
+            <div class="platform-tile__icon"><div class="platform-tile__icon-inner"></div></div>
+            <h3 class="platform-tile__title">[Value 1]</h3>
+            <p class="platform-tile__body">[PLACEHOLDER: Short description of this value.]</p>
+          </div>
+          <div class="platform-tile" data-reveal data-reveal-delay="2">
+            <div class="platform-tile__icon"><div class="platform-tile__icon-inner"></div></div>
+            <h3 class="platform-tile__title">[Value 2]</h3>
+            <p class="platform-tile__body">[PLACEHOLDER: Short description.]</p>
+          </div>
+          <div class="platform-tile" data-reveal data-reveal-delay="3">
+            <div class="platform-tile__icon"><div class="platform-tile__icon-inner"></div></div>
+            <h3 class="platform-tile__title">[Value 3]</h3>
+            <p class="platform-tile__body">[PLACEHOLDER: Short description.]</p>
+          </div>
+          <div class="platform-tile" data-reveal data-reveal-delay="4">
+            <div class="platform-tile__icon"><div class="platform-tile__icon-inner"></div></div>
+            <h3 class="platform-tile__title">[Value 4]</h3>
+            <p class="platform-tile__body">[PLACEHOLDER: Short description.]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEADERSHIP SECTION -->
+    <section class="section" aria-labelledby="leadership-heading">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Leadership</p>
+        <h2 class="headline-md" id="leadership-heading" data-reveal data-reveal-delay="1">
+          [Leadership Headline]
+        </h2>
+
+        <div class="leadership-grid" style="margin-top: 3rem;">
+          <!-- Leader card — repeat as needed -->
+          <article class="leader-card" data-reveal>
+            <div class="leader-card__photo">
+              <!-- Replace with <img> -->
+              <div style="width:100%;height:100%;background:var(--color-surface-3);"></div>
+            </div>
+            <div class="leader-card__info">
+              <h3 class="leader-card__name">[Name]</h3>
+              <p class="leader-card__title">[Title / Role]</p>
+              <p class="leader-card__bio body-sm">
+                [PLACEHOLDER: 2–3 sentence bio.]
+              </p>
+            </div>
+          </article>
+
+          <article class="leader-card" data-reveal data-reveal-delay="1">
+            <div class="leader-card__photo">
+              <div style="width:100%;height:100%;background:var(--color-surface-3);"></div>
+            </div>
+            <div class="leader-card__info">
+              <h3 class="leader-card__name">[Name]</h3>
+              <p class="leader-card__title">[Title / Role]</p>
+              <p class="leader-card__bio body-sm">[PLACEHOLDER: 2–3 sentence bio.]</p>
+            </div>
+          </article>
+
+          <article class="leader-card" data-reveal data-reveal-delay="2">
+            <div class="leader-card__photo">
+              <div style="width:100%;height:100%;background:var(--color-surface-3);"></div>
+            </div>
+            <div class="leader-card__info">
+              <h3 class="leader-card__name">[Name]</h3>
+              <p class="leader-card__title">[Title / Role]</p>
+              <p class="leader-card__bio body-sm">[PLACEHOLDER: 2–3 sentence bio.]</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREERS CTA -->
+    <section class="feature-strip" aria-labelledby="careers-heading">
+      <div class="feature-strip__bg">
+        <img src="../assets/images/about/careers-bg.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="container">
+        <div class="feature-strip__content">
+          <p class="eyebrow" data-reveal>[Careers / Join]</p>
+          <h2 class="feature-strip__headline" id="careers-heading" data-reveal data-reveal-delay="1">
+            [Careers Section Headline]
+          </h2>
+          <p class="feature-strip__body" data-reveal data-reveal-delay="2">
+            [PLACEHOLDER: Recruitment pitch. Why should top talent join this team?]
+          </p>
+          <a href="#" class="btn btn--primary btn--lg" data-reveal data-reveal-delay="3">
+            View Open Roles →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <nav class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </nav>
+        <p class="footer__copyright">© <span id="year"></span> [Company Name], Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

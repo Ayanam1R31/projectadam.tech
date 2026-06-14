@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="[PLACEHOLDER: Company tagline / meta description]" />
+  <meta property="og:title"       content="[Company Name]" />
+  <meta property="og:description" content="[PLACEHOLDER: OG description]" />
+  <meta property="og:image"       content="assets/images/og-image.jpg" />
+  <meta property="og:type"        content="website" />
+  <meta name="theme-color"        content="#0a0a0a" />
+
+  <title>[Company Name] — [Tagline]</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- ====================================================
+       NAVIGATION
+       ==================================================== -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+
+      <a href="index.html" class="nav__logo" aria-label="[Company Name] home">
+        <div class="nav__logo-mark" aria-hidden="true"></div>
+        <span class="nav__logo-text">[Company Name]</span>
+      </a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="pages/products.html"     class="nav__link">Systems</a></li>
+        <li><a href="#capabilities"            class="nav__link">Capabilities</a></li>
+        <li><a href="#technology"              class="nav__link">Technology</a></li>
+        <li><a href="pages/about.html"         class="nav__link">Mission</a></li>
+        <li><a href="#news"                    class="nav__link">News</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <a href="pages/contact.html" class="btn btn--ghost btn--sm">Partner With Us</a>
+        <a href="pages/contact.html" class="btn btn--primary btn--sm">
+          Contact
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="nav__mobile" id="navMobile" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+      <a href="pages/products.html" class="nav__mobile-link">Systems</a>
+      <a href="#capabilities"       class="nav__mobile-link">Capabilities</a>
+      <a href="#technology"         class="nav__mobile-link">Technology</a>
+      <a href="pages/about.html"    class="nav__mobile-link">Mission</a>
+      <a href="#news"               class="nav__mobile-link">News</a>
+      <a href="pages/contact.html"  class="nav__mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ====================================================
+         HERO
+         ==================================================== -->
+    <section class="hero" aria-label="Hero">
+      <div class="hero__media" aria-hidden="true">
+        <!-- Replace src with actual hero image/video -->
+        <img
+          class="hero__media-bg"
+          src="assets/images/hero/hero-bg.jpg"
+          alt=""
+          fetchpriority="high"
+        />
+        <!--
+          VIDEO OPTION:
+          <video class="hero__media-bg" autoplay muted loop playsinline>
+            <source src="assets/video/hero.mp4" type="video/mp4" />
+          </video>
+        -->
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow hero__eyebrow" data-reveal>
+          [Classification / Category Label]
+        </p>
+        <h1 class="headline-xl hero__headline" data-reveal data-reveal-delay="1">
+          [Primary<br/>Hero<br/><em>Headline</em>]
+        </h1>
+        <p class="hero__sub" data-reveal data-reveal-delay="2">
+          [PLACEHOLDER: One or two sentences describing the company's core value proposition for defense UAV operations.]
+        </p>
+        <div class="hero__actions" data-reveal data-reveal-delay="3">
+          <a href="pages/products.html" class="btn btn--primary btn--lg">
+            View Systems
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="pages/about.html" class="btn btn--ghost btn--lg">
+            Our Mission
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span class="hero__scroll-label">Scroll</span>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         TICKER BAR
+         ==================================================== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track" id="tickerTrack">
+        <!-- Items duplicated for seamless loop -->
+        <div class="ticker__item">
+          <span class="ticker__item-value">##</span>
+          <span>[STAT LABEL]</span>
+        </div>
+        <span class="ticker__sep">///</span>
+        <div class="ticker__item">
+          <span class="ticker__item-value">##</span>
+          <span>[STAT LABEL]</span>
+        </div>
+        <span class="ticker__sep">///</span>
+        <div class="ticker__item">
+          <span class="ticker__item-value">##</span>
+          <span>[STAT LABEL]</span>
+        </div>
+        <span class="ticker__sep">///</span>
+        <div class="ticker__item">
+          <span class="ticker__item-value">##</span>
+          <span>[STAT LABEL]</span>
+        </div>
+        <span class="ticker__sep">///</span>
+        <!-- Duplicate set -->
+        <div class="ticker__item">
+          <span class="ticker__item-value">##</span>
+          <span>[STAT LABEL]</span>
+        </div>
+        <span class="ticker__sep">///</span>
+        <div class="ticker__item">
+          <span class="ticker__item-value">##</span>
+          <span>[STAT LABEL]</span>
+        </div>
+        <span class="ticker__sep">///</span>
+        <div class="ticker__item">
+          <span class="ticker__item-value">##</span>
+          <span>[STAT LABEL]</span>
+        </div>
+        <span class="ticker__sep">///</span>
+        <div class="ticker__item">
+          <span class="ticker__item-value">##</span>
+          <span>[STAT LABEL]</span>
+        </div>
+        <span class="ticker__sep">///</span>
+      </div>
+    </div>
+
+    <!-- ====================================================
+         MISSION STATEMENT
+         ==================================================== -->
+    <section class="mission section" aria-labelledby="mission-heading">
+      <div class="container">
+        <div class="mission__inner">
+          <div class="mission__label">
+            <p class="eyebrow">Mission</p>
+          </div>
+          <div>
+            <p class="mission__text" id="mission-heading" data-reveal>
+              [PLACEHOLDER: Mission statement. A bold declaration of the company's purpose,
+              why it exists, and what problem it solves for <strong>national defense</strong>
+              and <strong>warfighters</strong>. Two to three sentences maximum.]
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         STATS
+         ==================================================== -->
+    <section class="section section--tight" aria-label="Key metrics">
+      <div class="container">
+        <div class="stats">
+          <div class="stat" data-reveal data-reveal-delay="1">
+            <div class="stat__number"><span class="counter" data-target="000">—</span><span class="stat__unit">+</span></div>
+            <p class="stat__label">[Stat Label One]</p>
+          </div>
+          <div class="stat" data-reveal data-reveal-delay="2">
+            <div class="stat__number"><span class="counter" data-target="000">—</span><span class="stat__unit">+</span></div>
+            <p class="stat__label">[Stat Label Two]</p>
+          </div>
+          <div class="stat" data-reveal data-reveal-delay="3">
+            <div class="stat__number"><span class="counter" data-target="000">—</span><span class="stat__unit">+</span></div>
+            <p class="stat__label">[Stat Label Three]</p>
+          </div>
+          <div class="stat" data-reveal data-reveal-delay="4">
+            <div class="stat__number"><span class="counter" data-target="000">—</span><span class="stat__unit">+</span></div>
+            <p class="stat__label">[Stat Label Four]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         SYSTEMS / PRODUCTS GRID
+         ==================================================== -->
+    <section class="section" id="systems" aria-labelledby="systems-heading">
+      <div class="container">
+        <div class="systems__header">
+          <div>
+            <p class="eyebrow" data-reveal>[Category / Systems]</p>
+            <h2 class="headline-lg" id="systems-heading" data-reveal data-reveal-delay="1">
+              [Systems Headline]
+            </h2>
+          </div>
+          <a href="pages/products.html" class="btn btn--ghost" data-reveal data-reveal-delay="2">
+            View All Systems
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="systems__grid">
+
+          <!-- Featured product card -->
+          <article class="system-card system-card--featured" data-reveal>
+            <div class="system-card__media">
+              <img
+                class="system-card__img"
+                src="assets/images/products/product-featured.jpg"
+                alt="[Product Name]"
+                loading="lazy"
+              />
+            </div>
+            <div class="system-card__overlay" aria-hidden="true"></div>
+            <div class="system-card__content">
+              <p class="system-card__designation">[SYSTEM-001]</p>
+              <h3 class="system-card__name">[Featured System Name]</h3>
+              <p class="system-card__type">[System Type / Classification]</p>
+              <div class="system-card__cta">
+                Learn More <span aria-hidden="true">→</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product card 2 -->
+          <article class="system-card" data-reveal data-reveal-delay="1">
+            <div class="system-card__media">
+              <img
+                class="system-card__img"
+                src="assets/images/products/product-2.jpg"
+                alt="[Product Name]"
+                loading="lazy"
+              />
+            </div>
+            <div class="system-card__overlay" aria-hidden="true"></div>
+            <div class="system-card__content">
+              <p class="system-card__designation">[SYSTEM-002]</p>
+              <h3 class="system-card__name">[System Name]</h3>
+              <p class="system-card__type">[System Type]</p>
+              <div class="system-card__cta">Learn More <span aria-hidden="true">→</span></div>
+            </div>
+          </article>
+
+          <!-- Product card 3 -->
+          <article class="system-card" data-reveal data-reveal-delay="2">
+            <div class="system-card__media">
+              <img
+                class="system-card__img"
+                src="assets/images/products/product-3.jpg"
+                alt="[Product Name]"
+                loading="lazy"
+              />
+            </div>
+            <div class="system-card__overlay" aria-hidden="true"></div>
+            <div class="system-card__content">
+              <p class="system-card__designation">[SYSTEM-003]</p>
+              <h3 class="system-card__name">[System Name]</h3>
+              <p class="system-card__type">[System Type]</p>
+              <div class="system-card__cta">Learn More <span aria-hidden="true">→</span></div>
+            </div>
+          </article>
+
+          <!-- Product card 4 -->
+          <article class="system-card" data-reveal data-reveal-delay="1">
+            <div class="system-card__media">
+              <img
+                class="system-card__img"
+                src="assets/images/products/product-4.jpg"
+                alt="[Product Name]"
+                loading="lazy"
+              />
+            </div>
+            <div class="system-card__overlay" aria-hidden="true"></div>
+            <div class="system-card__content">
+              <p class="system-card__designation">[SYSTEM-004]</p>
+              <h3 class="system-card__name">[System Name]</h3>
+              <p class="system-card__type">[System Type]</p>
+              <div class="system-card__cta">Learn More <span aria-hidden="true">→</span></div>
+            </div>
+          </article>
+
+          <!-- Product card 5 -->
+          <article class="system-card" data-reveal data-reveal-delay="2">
+            <div class="system-card__media">
+              <img
+                class="system-card__img"
+                src="assets/images/products/product-5.jpg"
+                alt="[Product Name]"
+                loading="lazy"
+              />
+            </div>
+            <div class="system-card__overlay" aria-hidden="true"></div>
+            <div class="system-card__content">
+              <p class="system-card__designation">[SYSTEM-005]</p>
+              <h3 class="system-card__name">[System Name]</h3>
+              <p class="system-card__type">[System Type]</p>
+              <div class="system-card__cta">Learn More <span aria-hidden="true">→</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         CAPABILITIES — ALTERNATING SECTIONS
+         ==================================================== -->
+    <section id="capabilities" aria-label="Capabilities">
+
+      <!-- Capability 1 -->
+      <div class="capability">
+        <div class="capability__media" data-reveal="left">
+          <img
+            class="capability__img"
+            src="assets/images/capabilities/capability-1.jpg"
+            alt="[Capability Name]"
+            loading="lazy"
+          />
+        </div>
+        <div class="capability__content">
+          <p class="eyebrow capability__eyebrow" data-reveal>[01 — Category]</p>
+          <h2 class="capability__headline" data-reveal data-reveal-delay="1">
+            [Capability<br/>Headline One]
+          </h2>
+          <p class="capability__body" data-reveal data-reveal-delay="2">
+            [PLACEHOLDER: Description of this capability. Explain what the technology does,
+            what operational problem it solves, and why it matters to the warfighter.
+            Two to four sentences.]
+          </p>
+          <div class="capability__specs" data-reveal data-reveal-delay="3">
+            <div>
+              <p class="capability__spec-label">[Spec Label]</p>
+              <p class="capability__spec-value">[VALUE]</p>
+            </div>
+            <div>
+              <p class="capability__spec-label">[Spec Label]</p>
+              <p class="capability__spec-value">[VALUE]</p>
+            </div>
+            <div>
+              <p class="capability__spec-label">[Spec Label]</p>
+              <p class="capability__spec-value">[VALUE]</p>
+            </div>
+            <div>
+              <p class="capability__spec-label">[Spec Label]</p>
+              <p class="capability__spec-value">[VALUE]</p>
+            </div>
+          </div>
+          <a href="pages/products.html" class="btn btn--outline-accent" data-reveal data-reveal-delay="4">
+            Explore System
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Capability 2 (reversed) -->
+      <div class="capability capability--reverse">
+        <div class="capability__media" data-reveal="right">
+          <img
+            class="capability__img"
+            src="assets/images/capabilities/capability-2.jpg"
+            alt="[Capability Name]"
+            loading="lazy"
+          />
+        </div>
+        <div class="capability__content">
+          <p class="eyebrow capability__eyebrow" data-reveal>[02 — Category]</p>
+          <h2 class="capability__headline" data-reveal data-reveal-delay="1">
+            [Capability<br/>Headline Two]
+          </h2>
+          <p class="capability__body" data-reveal data-reveal-delay="2">
+            [PLACEHOLDER: Description of capability two.]
+          </p>
+          <div class="capability__specs" data-reveal data-reveal-delay="3">
+            <div>
+              <p class="capability__spec-label">[Spec Label]</p>
+              <p class="capability__spec-value">[VALUE]</p>
+            </div>
+            <div>
+              <p class="capability__spec-label">[Spec Label]</p>
+              <p class="capability__spec-value">[VALUE]</p>
+            </div>
+            <div>
+              <p class="capability__spec-label">[Spec Label]</p>
+              <p class="capability__spec-value">[VALUE]</p>
+            </div>
+            <div>
+              <p class="capability__spec-label">[Spec Label]</p>
+              <p class="capability__spec-value">[VALUE]</p>
+            </div>
+          </div>
+          <a href="pages/products.html" class="btn btn--outline-accent" data-reveal data-reveal-delay="4">
+            Explore System
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Capability 3 -->
+      <div class="capability">
+        <div class="capability__media" data-reveal="left">
+          <img
+            class="capability__img"
+            src="assets/images/capabilities/capability-3.jpg"
+            alt="[Capability Name]"
+            loading="lazy"
+          />
+        </div>
+        <div class="capability__content">
+          <p class="eyebrow capability__eyebrow" data-reveal>[03 — Category]</p>
+          <h2 class="capability__headline" data-reveal data-reveal-delay="1">
+            [Capability<br/>Headline Three]
+          </h2>
+          <p class="capability__body" data-reveal data-reveal-delay="2">
+            [PLACEHOLDER: Description of capability three.]
+          </p>
+          <div class="capability__specs" data-reveal data-reveal-delay="3">
+            <div>
+              <p class="capability__spec-label">[Spec Label]</p>
+              <p class="capability__spec-value">[VALUE]</p>
+            </div>
+            <div>
+              <p class="capability__spec-label">[Spec Label]</p>
+              <p class="capability__spec-value">[VALUE]</p>
+            </div>
+          </div>
+          <a href="pages/products.html" class="btn btn--outline-accent" data-reveal data-reveal-delay="4">
+            Explore System
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ====================================================
+         TECHNOLOGY / PLATFORM
+         ==================================================== -->
+    <section class="platform section" id="technology" aria-labelledby="tech-heading">
+      <div class="container">
+        <div class="platform__header">
+          <p class="eyebrow" data-reveal>Platform</p>
+          <h2 class="headline-lg" id="tech-heading" data-reveal data-reveal-delay="1">
+            [Technology<br/>Platform Name]
+          </h2>
+          <p class="body-lg" style="max-width: 55ch; margin-top: 1rem;" data-reveal data-reveal-delay="2">
+            [PLACEHOLDER: Overview of the software/hardware platform that ties all systems together.]
+          </p>
+        </div>
+
+        <div class="platform__grid">
+          <div class="platform-tile" data-reveal data-reveal-delay="1">
+            <div class="platform-tile__icon"><div class="platform-tile__icon-inner"></div></div>
+            <h3 class="platform-tile__title">[Technology Pillar 1]</h3>
+            <p class="platform-tile__body">[PLACEHOLDER: One sentence description.]</p>
+          </div>
+          <div class="platform-tile" data-reveal data-reveal-delay="2">
+            <div class="platform-tile__icon"><div class="platform-tile__icon-inner"></div></div>
+            <h3 class="platform-tile__title">[Technology Pillar 2]</h3>
+            <p class="platform-tile__body">[PLACEHOLDER: One sentence description.]</p>
+          </div>
+          <div class="platform-tile" data-reveal data-reveal-delay="3">
+            <div class="platform-tile__icon"><div class="platform-tile__icon-inner"></div></div>
+            <h3 class="platform-tile__title">[Technology Pillar 3]</h3>
+            <p class="platform-tile__body">[PLACEHOLDER: One sentence description.]</p>
+          </div>
+          <div class="platform-tile" data-reveal data-reveal-delay="4">
+            <div class="platform-tile__icon"><div class="platform-tile__icon-inner"></div></div>
+            <h3 class="platform-tile__title">[Technology Pillar 4]</h3>
+            <p class="platform-tile__body">[PLACEHOLDER: One sentence description.]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         FEATURE STRIP (full-width callout)
+         ==================================================== -->
+    <section class="feature-strip" aria-labelledby="feature-heading">
+      <div class="feature-strip__bg" aria-hidden="true">
+        <img src="assets/images/feature/feature-bg.jpg" alt="" loading="lazy" />
+      </div>
+      <div class="container">
+        <div class="feature-strip__content">
+          <p class="eyebrow feature-strip__eyebrow" data-reveal>[Featured / Spotlight]</p>
+          <h2 class="feature-strip__headline" id="feature-heading" data-reveal data-reveal-delay="1">
+            [Feature<br/>Section<br/>Headline]
+          </h2>
+          <p class="feature-strip__body" data-reveal data-reveal-delay="2">
+            [PLACEHOLDER: A compelling single-paragraph callout for a key system, initiative,
+            or program. This should make a visitor want to click through.]
+          </p>
+          <a href="pages/products.html" class="btn btn--primary btn--lg" data-reveal data-reveal-delay="3">
+            Learn More
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         NEWS / UPDATES
+         ==================================================== -->
+    <section class="section" id="news" aria-labelledby="news-heading">
+      <div class="container">
+        <div class="news__header">
+          <div>
+            <p class="eyebrow" data-reveal>Latest</p>
+            <h2 class="headline-md" id="news-heading" data-reveal data-reveal-delay="1">
+              News & Updates
+            </h2>
+          </div>
+          <a href="pages/news.html" class="btn btn--ghost" data-reveal data-reveal-delay="2">
+            View All
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="news__grid">
+          <article class="news-card" data-reveal>
+            <div class="news-card__media">
+              <img class="news-card__img" src="assets/images/news/news-1.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">[Category]</span>
+                <time class="news-card__date" datetime="2026-01-01">[Month DD, YYYY]</time>
+              </div>
+              <h3 class="news-card__title">[PLACEHOLDER: News article headline goes here]</h3>
+              <p class="news-card__excerpt">[PLACEHOLDER: Brief excerpt or summary of the news item. One or two sentences.]</p>
+            </div>
+          </article>
+
+          <article class="news-card" data-reveal data-reveal-delay="1">
+            <div class="news-card__media">
+              <img class="news-card__img" src="assets/images/news/news-2.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">[Category]</span>
+                <time class="news-card__date" datetime="2026-01-01">[Month DD, YYYY]</time>
+              </div>
+              <h3 class="news-card__title">[PLACEHOLDER: News article headline goes here]</h3>
+              <p class="news-card__excerpt">[PLACEHOLDER: Brief excerpt or summary of the news item.]</p>
+            </div>
+          </article>
+
+          <article class="news-card" data-reveal data-reveal-delay="2">
+            <div class="news-card__media">
+              <img class="news-card__img" src="assets/images/news/news-3.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__tag">[Category]</span>
+                <time class="news-card__date" datetime="2026-01-01">[Month DD, YYYY]</time>
+              </div>
+              <h3 class="news-card__title">[PLACEHOLDER: News article headline goes here]</h3>
+              <p class="news-card__excerpt">[PLACEHOLDER: Brief excerpt or summary of the news item.]</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         PARTNERS
+         ==================================================== -->
+    <section class="partners section" aria-label="Partners and clients">
+      <div class="container">
+        <p class="eyebrow partners__label" data-reveal>Trusted By</p>
+        <div class="partners__logos">
+          <!-- Replace with actual partner logo <img> elements -->
+          <div class="partner-logo" style="width:120px;height:28px;background:var(--color-border-light);"></div>
+          <div class="partner-logo" style="width:100px;height:28px;background:var(--color-border-light);"></div>
+          <div class="partner-logo" style="width:130px;height:28px;background:var(--color-border-light);"></div>
+          <div class="partner-logo" style="width:90px; height:28px;background:var(--color-border-light);"></div>
+          <div class="partner-logo" style="width:110px;height:28px;background:var(--color-border-light);"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         CTA BANNER
+         ==================================================== -->
+    <section class="cta-banner section" aria-labelledby="cta-heading">
+      <div class="container">
+        <p class="eyebrow cta-banner__eyebrow" data-reveal>[Call to Action Category]</p>
+        <h2 class="cta-banner__headline" id="cta-heading" data-reveal data-reveal-delay="1">
+          [CTA Headline]
+        </h2>
+        <p class="cta-banner__sub" data-reveal data-reveal-delay="2">
+          [PLACEHOLDER: Supporting copy for the CTA. What should the visitor do next?]
+        </p>
+        <div class="cta-banner__actions" data-reveal data-reveal-delay="3">
+          <a href="pages/contact.html" class="btn btn--primary btn--lg">
+            [Primary Action]
+            <span class="btn__arrow" aria-hidden="true">→</span>
+          </a>
+          <a href="pages/products.html" class="btn btn--ghost btn--lg">
+            [Secondary Action]
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====================================================
+       FOOTER
+       ==================================================== -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container">
+
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-logo">
+            <div class="footer__brand-mark" aria-hidden="true"></div>
+            <span class="footer__brand-name">[Company Name]</span>
+          </div>
+          <p class="footer__tagline">
+            [PLACEHOLDER: One-line company tagline or mission descriptor.]
+          </p>
+          <nav class="footer__social" aria-label="Social media links">
+            <!-- Replace href and icon with real links -->
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <div class="footer__social-icon"></div>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="X / Twitter">
+              <div class="footer__social-icon"></div>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube">
+              <div class="footer__social-icon"></div>
+            </a>
+          </nav>
+        </div>
+
+        <nav aria-label="Systems">
+          <p class="footer__col-title">Systems</p>
+          <ul class="footer__links" role="list">
+            <li><a href="pages/products.html" class="footer__link">[System 1]</a></li>
+            <li><a href="pages/products.html" class="footer__link">[System 2]</a></li>
+            <li><a href="pages/products.html" class="footer__link">[System 3]</a></li>
+            <li><a href="pages/products.html" class="footer__link">[System 4]</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Company">
+          <p class="footer__col-title">Company</p>
+          <ul class="footer__links" role="list">
+            <li><a href="pages/about.html"   class="footer__link">Mission</a></li>
+            <li><a href="pages/about.html"   class="footer__link">Leadership</a></li>
+            <li><a href="#news"              class="footer__link">News</a></li>
+            <li><a href="pages/contact.html" class="footer__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Resources">
+          <p class="footer__col-title">Resources</p>
+          <ul class="footer__links" role="list">
+            <li><a href="#" class="footer__link">[Resource 1]</a></li>
+            <li><a href="#" class="footer__link">[Resource 2]</a></li>
+            <li><a href="#" class="footer__link">[Resource 3]</a></li>
+            <li><a href="#" class="footer__link">Careers</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <nav class="footer__legal" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Cookie Settings</a>
+        </nav>
+        <p class="footer__copyright">
+          © <span id="year"></span> [Company Name], Inc. All rights reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="[PLACEHOLDER: System detail page description]" />
+  <title>[System Name] — [Company Name]</title>
+
+  <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/variables.css" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link rel="stylesheet" href="../css/system-detail.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <div class="nav__logo-mark"></div>
+        <span class="nav__logo-text">[Company Name]</span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="products.html" class="nav__link active">Systems</a></li>
+        <li><a href="about.html"    class="nav__link">Mission</a></li>
+        <li><a href="contact.html"  class="nav__link">Contact</a></li>
+      </ul>
+      <div class="nav__actions">
+        <a href="contact.html" class="btn btn--primary btn--sm">Contact →</a>
+      </div>
+      <button class="nav__hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="navMobile">
+      <a href="products.html" class="nav__mobile-link">Systems</a>
+      <a href="about.html"    class="nav__mobile-link">Mission</a>
+      <a href="contact.html"  class="nav__mobile-link">Contact</a>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- SYSTEM HERO -->
+    <header class="system-hero" aria-label="System hero">
+      <div class="system-hero__media">
+        <img
+          class="system-hero__img"
+          src="../assets/images/products/product-hero.jpg"
+          alt="[System Name]"
+          fetchpriority="high"
+        />
+      </div>
+      <div class="system-hero__overlay"></div>
+      <div class="container system-hero__content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span aria-hidden="true">/</span>
+          <a href="products.html">Systems</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">[System Name]</span>
+        </nav>
+        <p class="system-hero__designation mono" data-reveal>[SYSTEM-000]</p>
+        <h1 class="system-hero__name headline-xl" data-reveal data-reveal-delay="1">
+          [System<br/>Name]
+        </h1>
+        <p class="system-hero__type eyebrow" data-reveal data-reveal-delay="2">
+          [System Type / Classification]
+        </p>
+      </div>
+    </header>
+
+    <!-- QUICK SPECS BAR -->
+    <div class="quick-specs">
+      <div class="container quick-specs__inner">
+        <div class="quick-spec">
+          <span class="quick-spec__label">[Spec]</span>
+          <span class="quick-spec__value">[Value]</span>
+        </div>
+        <div class="quick-spec">
+          <span class="quick-spec__label">[Spec]</span>
+          <span class="quick-spec__value">[Value]</span>
+        </div>
+        <div class="quick-spec">
+          <span class="quick-spec__label">[Spec]</span>
+          <span class="quick-spec__value">[Value]</span>
+        </div>
+        <div class="quick-spec">
+          <span class="quick-spec__label">[Spec]</span>
+          <span class="quick-spec__value">[Value]</span>
+        </div>
+        <a href="contact.html" class="btn btn--primary btn--sm quick-specs__cta">
+          Request Info →
+        </a>
+      </div>
+    </div>
+
+    <!-- SYSTEM BODY — two-column layout -->
+    <section class="section">
+      <div class="container">
+        <div class="system-body">
+
+          <!-- Left: sticky sidebar nav -->
+          <aside class="system-nav" aria-label="Section navigation">
+            <ul class="system-nav__list" role="list">
+              <li><a href="#overview"        class="system-nav__link">Overview</a></li>
+              <li><a href="#specifications"  class="system-nav__link">Specifications</a></li>
+              <li><a href="#capabilities"    class="system-nav__link">Capabilities</a></li>
+              <li><a href="#gallery"         class="system-nav__link">Gallery</a></li>
+              <li><a href="#downloads"       class="system-nav__link">Downloads</a></li>
+            </ul>
+          </aside>
+
+          <!-- Right: content -->
+          <div class="system-content">
+
+            <!-- Overview -->
+            <section id="overview" class="system-section">
+              <h2 class="system-section__heading headline-md" data-reveal>Overview</h2>
+              <hr class="rule rule--accent" style="margin: 1.5rem 0;" />
+              <p class="body-lg" data-reveal data-reveal-delay="1">
+                [PLACEHOLDER: Full system overview. 2–4 paragraphs describing the system,
+                its design philosophy, intended operational context, and key differentiators.
+                Written for a defense procurement audience.]
+              </p>
+              <p class="body-lg" style="margin-top: 1.5rem;" data-reveal data-reveal-delay="2">
+                [PLACEHOLDER: Second paragraph.]
+              </p>
+            </section>
+
+            <!-- Specifications -->
+            <section id="specifications" class="system-section">
+              <h2 class="system-section__heading headline-md" data-reveal>Specifications</h2>
+              <hr class="rule rule--accent" style="margin: 1.5rem 0;" />
+              <table class="spec-table" data-reveal data-reveal-delay="1">
+                <tbody>
+                  <tr>
+                    <th class="spec-table__key">[Specification Category]</th>
+                    <td class="spec-table__val" colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td class="spec-table__key spec-table__key--sub">[Spec Name]</td>
+                    <td class="spec-table__val">[Value]</td>
+                    <td class="spec-table__key spec-table__key--sub">[Spec Name]</td>
+                    <td class="spec-table__val">[Value]</td>
+                  </tr>
+                  <tr>
+                    <td class="spec-table__key spec-table__key--sub">[Spec Name]</td>
+                    <td class="spec-table__val">[Value]</td>
+                    <td class="spec-table__key spec-table__key--sub">[Spec Name]</td>
+                    <td class="spec-table__val">[Value]</td>
+                  </tr>
+                  <tr>
+                    <th class="spec-table__key">[Specification Category 2]</th>
+                    <td class="spec-table__val" colspan="3"></td>
+                  </tr>
+                  <tr>
+                    <td class="spec-table__key spec-table__key--sub">[Spec Name]</td>
+                    <td class="spec-table__val">[Value]</td>
+                    <td class="spec-table__key spec-table__key--sub">[Spec Name]</td>
+                    <td class="spec-table__val">[Value]</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <!-- Capabilities -->
+            <section id="capabilities" class="system-section">
+              <h2 class="system-section__heading headline-md" data-reveal>Capabilities</h2>
+              <hr class="rule rule--accent" style="margin: 1.5rem 0;" />
+              <div class="capability-list">
+                <div class="capability-item" data-reveal>
+                  <p class="capability-item__title">[Capability 1]</p>
+                  <p class="capability-item__desc">[PLACEHOLDER: Description.]</p>
+                </div>
+                <div class="capability-item" data-reveal data-reveal-delay="1">
+                  <p class="capability-item__title">[Capability 2]</p>
+                  <p class="capability-item__desc">[PLACEHOLDER: Description.]</p>
+                </div>
+                <div class="capability-item" data-reveal data-reveal-delay="2">
+                  <p class="capability-item__title">[Capability 3]</p>
+                  <p class="capability-item__desc">[PLACEHOLDER: Description.]</p>
+                </div>
+                <div class="capability-item" data-reveal data-reveal-delay="3">
+                  <p class="capability-item__title">[Capability 4]</p>
+                  <p class="capability-item__desc">[PLACEHOLDER: Description.]</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Gallery -->
+            <section id="gallery" class="system-section">
+              <h2 class="system-section__heading headline-md" data-reveal>Gallery</h2>
+              <hr class="rule rule--accent" style="margin: 1.5rem 0;" />
+              <div class="gallery-grid" data-reveal data-reveal-delay="1">
+                <!-- Add <img> or <video> elements here -->
+                <div class="gallery-item">
+                  <div style="width:100%;height:100%;background:var(--color-surface-3);"></div>
+                </div>
+                <div class="gallery-item">
+                  <div style="width:100%;height:100%;background:var(--color-surface-3);"></div>
+                </div>
+                <div class="gallery-item">
+                  <div style="width:100%;height:100%;background:var(--color-surface-3);"></div>
+                </div>
+                <div class="gallery-item">
+                  <div style="width:100%;height:100%;background:var(--color-surface-3);"></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Downloads -->
+            <section id="downloads" class="system-section">
+              <h2 class="system-section__heading headline-md" data-reveal>Downloads</h2>
+              <hr class="rule rule--accent" style="margin: 1.5rem 0;" />
+              <div class="downloads-list" data-reveal data-reveal-delay="1">
+                <a href="#" class="download-item">
+                  <span class="download-item__icon mono">[PDF]</span>
+                  <span class="download-item__name">[Document Name]</span>
+                  <span class="download-item__size muted">[File size]</span>
+                  <span class="download-item__dl btn__arrow">↓</span>
+                </a>
+                <a href="#" class="download-item">
+                  <span class="download-item__icon mono">[PDF]</span>
+                  <span class="download-item__name">[Document Name]</span>
+                  <span class="download-item__size muted">[File size]</span>
+                  <span class="download-item__dl btn__arrow">↓</span>
+                </a>
+              </div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED SYSTEMS -->
+    <section class="section platform" aria-labelledby="related-heading">
+      <div class="container">
+        <p class="eyebrow" data-reveal>[Related]</p>
+        <h2 class="headline-md" id="related-heading" data-reveal data-reveal-delay="1">
+          Related Systems
+        </h2>
+        <div class="systems__grid" style="margin-top: 2rem;">
+          <!-- Reuse system-card components -->
+          <article class="system-card" data-reveal>
+            <div class="system-card__media">
+              <img class="system-card__img" src="../assets/images/products/product-2.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="system-card__overlay"></div>
+            <div class="system-card__content">
+              <p class="system-card__designation">[SYSTEM-002]</p>
+              <h3 class="system-card__name">[System Name]</h3>
+              <p class="system-card__type">[Type]</p>
+              <div class="system-card__cta">View System →</div>
+            </div>
+          </article>
+          <article class="system-card" data-reveal data-reveal-delay="1">
+            <div class="system-card__media">
+              <img class="system-card__img" src="../assets/images/products/product-3.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="system-card__overlay"></div>
+            <div class="system-card__content">
+              <p class="system-card__designation">[SYSTEM-003]</p>
+              <h3 class="system-card__name">[System Name]</h3>
+              <p class="system-card__type">[Type]</p>
+              <div class="system-card__cta">View System →</div>
+            </div>
+          </article>
+          <article class="system-card" data-reveal data-reveal-delay="2">
+            <div class="system-card__media">
+              <img class="system-card__img" src="../assets/images/products/product-4.jpg" alt="" loading="lazy" />
+            </div>
+            <div class="system-card__overlay"></div>
+            <div class="system-card__content">
+              <p class="system-card__designation">[SYSTEM-004]</p>
+              <h3 class="system-card__name">[System Name]</h3>
+              <p class="system-card__type">[Type]</p>
+              <div class="system-card__cta">View System →</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <nav class="footer__legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </nav>
+        <p class="footer__copyright">© <span id="year"></span> [Company Name], Inc.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js" defer></script>
+  <script src="../js/system-detail.js" defer></script>
+</body>
+</html>
