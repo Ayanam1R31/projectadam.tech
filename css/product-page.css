@@ -227,6 +227,99 @@
 }
 
 /* ============================================================
+   FLIGHT MODES
+   ============================================================ */
+
+.flight-modes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: var(--space-16);
+  border: 1px solid var(--color-border);
+  position: relative;
+}
+
+.flight-modes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent 0%, var(--color-accent) 20%, var(--color-accent) 80%, transparent 100%);
+}
+
+.flight-mode {
+  padding: var(--space-10) var(--space-8);
+  border-right: 1px solid var(--color-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.flight-mode:last-child {
+  border-right: none;
+}
+
+.flight-mode::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-accent);
+}
+
+.flight-mode__num {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: clamp(4rem, 7vw, 6rem);
+  font-weight: var(--weight-black);
+  color: rgba(255, 255, 255, 0.04);
+  line-height: 1;
+  margin-bottom: var(--space-6);
+  user-select: none;
+  letter-spacing: -0.02em;
+}
+
+.flight-mode__tag {
+  font-family: var(--font-mono);
+  font-size: var(--size-xs);
+  color: var(--color-accent);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+}
+
+.flight-mode__title {
+  font-size: var(--size-2xl);
+  font-weight: var(--weight-semibold);
+  color: #fff;
+  letter-spacing: var(--tracking-tight);
+  margin-bottom: var(--space-4);
+}
+
+.flight-mode__body {
+  font-size: var(--size-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-loose);
+}
+
+@media (max-width: 768px) {
+  .flight-modes {
+    grid-template-columns: 1fr;
+  }
+  .flight-mode {
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .flight-mode:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ============================================================
    PARTNER PAGE
    ============================================================ */
 
