@@ -1,0 +1,24 @@
+# Project ADAM
+
+> A new type of UAV. Project ADAM develops the Lilith UAV and ADAM Powerplant — a hybrid microturbine propulsion system for next-generation defense autonomous vehicles.
+
+## About
+
+Project ADAM is an early-stage defense aerospace company building a new class of UAV platform. The Lilith UAV is an 18kg fin-stabilized VTOL UAV capable of eVTOL takeoff, precision quadcopter-level flight, and high-speed cruise above Mach 0.3 where the props fold for a clean aerodynamic profile. It is powered by the ADAM hybrid microturbine powerplant, which replaces batteries and supplies onboard power generation for sensors and payloads.
+
+## Products
+
+- [Lilith UAV](https://projectadam.tech/pages/uav.html): 18kg eVTOL UAV. Range: 140km. Top speed: 274 m/s (Mach 0.80). Payload: 4.5kg. Power available: 6kW. Man-portable. Three flight states: eVTOL, precision drone-assisted flight, and high-speed cruise.
+- [ADAM Powerplant](https://projectadam.tech/pages/powerplant.html): Hybrid microturbine propulsion and power generation system. Plug-and-play replacement for battery systems. Supplies thrust and onboard electrical power simultaneously.
+
+## Team
+
+- [Our Team](https://projectadam.tech/pages/team.html): Owen Maute (Mechanical Engineer, Project Lead), Zayne Sotolongo (CFD & Aerospace Engineer), Daniil Em (Aerospace Engineer, CFD & Dynamics), Audrey Luu (Mechanical Engineer, Funding & Outreach)
+
+## Partnerships
+
+- [Partner With Us](https://projectadam.tech/pages/partner.html): Seeking pre-seed funding in the $10,000–$30,000 range. Funding partners receive a non-exclusive, royalty-free license to the ADAM and Lilith technology stack. Open to other partnership arrangements.
+
+## Contact
+
+- [Contact](https://projectadam.tech/pages/contact.html): owen.maute@gmail.com
